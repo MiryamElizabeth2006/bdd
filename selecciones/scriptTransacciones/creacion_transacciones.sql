@@ -39,4 +39,22 @@ values (1020,'14785',14700000,'C','22/02/2019','17:59')
 insert into transacciones (codigo,numero_cuenta,monto,tipo,fecha,hora)
 values (1025,'14785',600000,'D','13/12/2023','10:18')
 
+insert into transacciones (codigo,numero_cuenta,monto,tipo,fecha,hora)
+values (1026,'17858',800,'C','12/02/2022','12:30')
+
+insert into transacciones (codigo,numero_cuenta,monto,tipo,fecha,hora)
+values (1027,'17789',650,'C','23/05/2023','14:30')
+
 select *from transacciones
+
+--seleccion de las transacciones solo tipo D
+select *from transacciones
+where tipo like 'D%'
+
+--seleccion de las transacciones con montos entre 200 y 2000
+select *from transacciones
+where monto between '200' and '2000'
+
+--seleccion de codigo, monto, tipo y fecha de las transacciones con fecha diferente de null
+select codigo,monto,tipo,fecha from transacciones
+where fecha is not null

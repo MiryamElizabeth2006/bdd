@@ -34,4 +34,15 @@ values (0008,'Milanesa',3.50,170)
 
 select * from productos
 
+-- Productos que empeizan con Q
+select * from productos
+where nombre like 'Q%'
+
+--Lo que tenga deascripción nula
+select *from productos
+where descripcion is null
+
+--Precios entre dos y tres
+select * from productos
+where precio between '2' and '3'
 

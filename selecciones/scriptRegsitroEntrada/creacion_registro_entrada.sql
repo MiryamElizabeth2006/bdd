@@ -40,7 +40,21 @@
 insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
  values (00020,'1848756988','09/05/2023','12:40') 
  
- select * from registros_entrada
+ insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+ values (00021,'1748756988','13/06/2023','07:40')
+ 
+ select * from registros_entrada 
+ 
+ --Seleccion de todas las cedular, fecha y hora
+ select cedula_empleado,fecha,hora from registros_entrada
+ 
+ --seleccion de todos los registros que esten entre 7:00 y 14:00
+ select * from registros_entrada 
+ where hora between '7:00' and '14:00'
+ 
+ --Horas superiores a 8:00
+ select * from registros_entrada 
+ where hora > '8:00'
  
  
  

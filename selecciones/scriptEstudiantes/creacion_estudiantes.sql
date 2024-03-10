@@ -32,4 +32,26 @@ values ('1745896512','Pablo','Bustamante','bustamante12@gmail.com','11/04/1968')
 insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
 values ('0987451263','Manuel','Aguirre','manu45@gmail.com','14/12/1995')
 
+insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
+values ('0987451258','Ariana','Sanchez','ari22@gmail.com','14/12/1995')
+
+insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
+values ('0988741263','Alex','Palma','pastita@gmail.com','15/02/2006')
+
 select * from estudiantes
+
+--nombre y cedula de los estudiantes
+select nombre,cedula from estudiantes
+
+--nombre de los estudiantes que su cedula empieze  con 17
+select nombre,cedula from estudiantes
+where cedula like '17%'
+
+--nombre de los estudiantes que su cedula empieze  con 17 sin que se muestre la cedula
+select nombre from estudiantes
+where cedula like '17%'
+
+--nombres completos de todos los estudiantes que empiecen con A
+select * from estudiantes
+where nombre like 'A%'
+
