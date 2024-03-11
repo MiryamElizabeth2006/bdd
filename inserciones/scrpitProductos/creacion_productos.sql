@@ -32,6 +32,4 @@ values (0007,'Queso',2.00,120)
 insert into productos (codigo,nombre,precio,stock)
 values (0008,'Milanesa',3.50,170)
 
-select * from productos
-
 
